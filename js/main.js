@@ -34,8 +34,12 @@
             showValidate(message);
             check=false;
         }
-
+        if(check == true){
+        return alert("Mensagem enviada");
+    }
+    else{
         return check;
+    }
     });
 
 
@@ -49,6 +53,8 @@
         var thisAlert = $(input).parent();
 
         $(thisAlert).addClass('alert-validate');
+       
+        
     }
 
     function hideValidate(input) {
